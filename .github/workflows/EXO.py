@@ -87,8 +87,9 @@ class Cellule:
         return False
 perso=Cellule("marcel")
 n=randint(1,10)
-for i in range (30):
+for i in range (60):
     perso.mange(n)
-    print("Jour ",i,":",perso.dead(),perso.vie)
+    perso.viellis()
+    print("Jour ",i,":",perso.dead(),int(perso.vie))
     if perso.dead()==True:
         break
